@@ -1,0 +1,20 @@
+{
+    "name": "Kaggle DevContainer",
+    "image": "gcr.io/kaggle-images/python:latest",
+    "runArgs": [
+        "--env-file",
+        ".devcontainer/.env"
+    ],
+    "customizations": {
+    "vscode": {
+        "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python"
+        },
+        "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+        ]
+    }
+    },
+    "remoteUser": "root"
+}
